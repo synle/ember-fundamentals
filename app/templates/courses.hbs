@@ -1,9 +1,9 @@
 <div><h2>courses.list</h2></div>
 <div>
     <ul>
-        {{#each model.courses as |course courseIndex|}}
+        {{#each model.courses as |course|}}
             <li>
-            {{link-to course.attributes.title 'courses.show' course.attributes.slug}}
+            {{link-to course.title 'courses.show' course.id}}
             </li>
         {{/each}}
     </ul>
