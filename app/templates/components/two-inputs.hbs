@@ -1,0 +1,16 @@
+<div style="margin-top:10px;">
+    <label style="margin-right:10px;">Lowercase:</label>
+    <input
+        class="lowercase-field"
+        value={{str}}
+        oninput={{action (mut str) value='target.value'}}
+        />
+</div>
+<div style="margin-top:10px;">
+    <label style="margin-right:10px;">Uppercase:</label>
+    <input
+        class="uppercase-field"
+        value={{uppercaseStr}}
+        oninput={{action (mut uppercaseStr) value='target.value'}}
+        />
+</div>

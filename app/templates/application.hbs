@@ -1,5 +1,13 @@
 {{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
+{{!-- {{welcome-page}} --}}
 {{!-- Feel free to remove this! --}}
 
-{{outlet}}
+{{#each courses as |course|}}
+    {{course-list-item model=course}}
+{{/each}}
+
+<div style="margin-top:30px;">
+    {{two-inputs}}
+</div>
+
+{{!-- {{outlet}} --}}
