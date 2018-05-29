@@ -1,6 +1,6 @@
 import Controller from '@ember/controller';
 
-const ALL_COURSES = [
+export const ALL_COURSES = [
   {
     title: 'Phoenix Fundamentals',
     summary:
@@ -42,6 +42,5 @@ const ALL_COURSES = [
 export default class extends Controller {
   constructor() {
     super();
-    this.courses = ALL_COURSES;
   }
 }

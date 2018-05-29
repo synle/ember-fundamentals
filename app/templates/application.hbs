@@ -1,13 +1,13 @@
+<div><h1>applications.hbs</h1></div>
 {{!-- The following component displays Ember's default welcome message. --}}
 {{!-- {{welcome-page}} --}}
 {{!-- Feel free to remove this! --}}
 
-{{#each courses as |course|}}
-    {{course-list-item model=course}}
-{{/each}}
 
-<div style="margin-top:30px;">
-    {{two-inputs}}
+<div style="margin-top:15px; padding-top:15px ; border-top: 2px solid blue">
+    {{nav-header}}
 </div>
 
-{{!-- {{outlet}} --}}
+<div style="margin-top:15px; padding-top:15px ; border-top: 2px solid blue">
+    {{outlet}}
+</div>

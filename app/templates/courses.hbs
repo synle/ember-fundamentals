@@ -1,0 +1,13 @@
+<div><h2>courses.list</h2></div>
+<div>
+    <ul>
+        {{#each model.courses as |course courseIndex|}}
+            <li>
+            {{link-to course.title 'courses.show' courseIndex}}
+            </li>
+        {{/each}}
+    </ul>
+</div>
+
+
+{{outlet}}

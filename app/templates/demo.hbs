@@ -1,0 +1,16 @@
+<div style="margin-top:15px; padding-top:15px ; border-top: 2px solid blue">
+    <div>
+        <h4>Course List:</h4>
+    </div>
+    <div>
+        {{#each model.courses as |course|}}
+            {{course-list-item model=course}}
+        {{/each}}
+    </div>
+</div>
+
+<div style="margin-top:15px; padding-top:15px ; border-top: 2px solid blue">
+    {{two-inputs}}
+</div>
+
+{{outlet}}
