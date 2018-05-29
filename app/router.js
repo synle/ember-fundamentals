@@ -7,7 +7,7 @@ const Router = EmberRouter.extend({
 });
 
 Router.map(function() {
-  this.route('index', {path: '/'});
+  // this.route('index', {path: '/'});
 
   // posts
   this.route('posts', function() {
@@ -27,7 +27,7 @@ Router.map(function() {
   // courses
   this.route('courses', function() {
     this.route('show', {
-        path: '/:course_index'
+        path: '/:slug'
     });
   });
 });

@@ -39,6 +39,8 @@ export const ALL_COURSES = [
   }
 ];
 
+
+
 export default class extends Controller {
   constructor() {
     super();

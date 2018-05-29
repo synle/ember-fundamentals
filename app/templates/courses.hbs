@@ -3,7 +3,7 @@
     <ul>
         {{#each model.courses as |course courseIndex|}}
             <li>
-            {{link-to course.title 'courses.show' courseIndex}}
+            {{link-to course.attributes.title 'courses.show' course.attributes.slug}}
             </li>
         {{/each}}
     </ul>
